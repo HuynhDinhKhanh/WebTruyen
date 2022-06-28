@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="WebTruyen">
+  <DataContextMoniker Name="/WebTruyenDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a5c5a32e-127d-4bc7-8f49-378fe96f10f7" absoluteBounds="0.75, 5.5, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/WebTruyenDataContext/TheLoai" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8d46cdc1-f5c2-44c0-9411-6e71c804e4ff" absoluteBounds="0.765, 5.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c277b29b-7872-46f2-aedd-8d22b51d1475" absoluteBounds="3.5, 5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/WebTruyenDataContext/Truyen" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2d6b9f33-34e6-432d-93dd-baa0719624e3" absoluteBounds="3.515, 5.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f7a411fe-28df-445d-8a93-8daecd202cc3" absoluteBounds="0.75, 1, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/WebTruyenDataContext/KhachHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5f20d2b1-b138-48d0-bbdb-204cedac1b2c" absoluteBounds="0.765, 1.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c26dd45b-1986-4e6c-b854-242faed81521" absoluteBounds="3.5, 1.125, 2, 1.9631982421875003">
+      <DataClassMoniker Name="/WebTruyenDataContext/DonHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c6e624c1-31a9-44c3-aede-d5720deb1603" absoluteBounds="3.515, 1.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5f542a99-2c86-4569-ac6c-dbfd40039929" absoluteBounds="6.25, 1.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/WebTruyenDataContext/ChiTietDonHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="946190c4-1c9f-4f93-8179-2ff465579485" absoluteBounds="6.265, 1.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 6.09699625651042); (3.5 : 6.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WebTruyenDataContext/TheLoai/TheLoai_Truyen" />
+      <nodes>
+        <classShapeMoniker Id="a5c5a32e-127d-4bc7-8f49-378fe96f10f7" />
+        <classShapeMoniker Id="c277b29b-7872-46f2-aedd-8d22b51d1475" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.10659912109375); (3.5 : 2.10659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WebTruyenDataContext/KhachHang/KhachHang_DonHang" />
+      <nodes>
+        <classShapeMoniker Id="f7a411fe-28df-445d-8a93-8daecd202cc3" />
+        <classShapeMoniker Id="c26dd45b-1986-4e6c-b854-242faed81521" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.16429768880208); (6.25 : 2.16429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WebTruyenDataContext/DonHang/DonHang_ChiTietDonHang" />
+      <nodes>
+        <classShapeMoniker Id="c26dd45b-1986-4e6c-b854-242faed81521" />
+        <classShapeMoniker Id="5f542a99-2c86-4569-ac6c-dbfd40039929" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.07774983723958); (7.25 : 6.07774983723958); (7.25 : 2.95359537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WebTruyenDataContext/Truyen/Truyen_ChiTietDonHang" />
+      <nodes>
+        <classShapeMoniker Id="c277b29b-7872-46f2-aedd-8d22b51d1475" />
+        <classShapeMoniker Id="5f542a99-2c86-4569-ac6c-dbfd40039929" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

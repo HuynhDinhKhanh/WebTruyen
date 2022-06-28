@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Thêm Thể Loại Truyện</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <p>
+            Tên thể loại:
+            @Html.TextBox("tenloai")<font color="red">@ViewData["Error"]</font>
+        </p>
+        <p>
+            <input type="submit" value="Thêm" />
+        </p>
+    </fieldset>
+}
+<div>
+    @Html.ActionLink("Trở Về Trước", "Index")
+</div>
+
+
